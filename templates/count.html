@@ -1,0 +1,13 @@
+<h1>统计结果,总字数为：{{count}}字</h1>
+
+<br/>
+<h2>您的文字为：</h2>
+{{text}}
+<br/>
+<!--{{word}}-->
+<br/>
+<h2>出现频率</h2>
+{% for word,count in sorted %}
+{{word}} -- {{count}}
+<br/>
+{% endfor %}
